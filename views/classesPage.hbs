@@ -1,0 +1,40 @@
+
+
+
+    <h1>Book in a class now!</h1>
+    <br>
+
+
+    <div>
+        <table>
+        {{#each data}}
+        <tr>{{this.type}} {{this.date}} {{this.trainerName}}</tr>
+        <br>
+        {{/each}}
+        </table>
+    </div>
+    <br>
+    <div id="ClassForm">
+    <form method="POST" action ="/classes/attend">
+        Bookings 
+        <div>
+        <label for="Name">Full Name</label>
+        <input type="text" name="Full Name">
+        </div>
+        <div>
+        <label for="Class Name">Class Name</label>
+        <input type="text">  
+        </div>
+        <div>
+        <label for="Class Date">Class Date</label>
+        <input type="date">  
+        </div>
+        <div>
+        <button class="navButton" style="padding-top: 10;">Submit</button>
+        </div>
+
+
+    </form>
+
+    </div>
+
