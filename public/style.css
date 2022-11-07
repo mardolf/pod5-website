@@ -88,3 +88,16 @@ body{
     text-align: center;
     background-color: lightgray;
 }
+
+
+/* Table styling */
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: pink;
+    border-radius: 15px;
+}
+
+input{
+    background-color: pink;
+}

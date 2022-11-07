@@ -18,10 +18,10 @@ app.get('/', (req,res) => {
     res.render('index.hbs')
 });
 
-app.get('/classes',(req,res)=>{
-    console.log("Loading Classes page")
-    res.render("classesPage.hbs")
-});
+// app.get('/classes',(req,res)=>{
+//     console.log("Loading Classes page")
+//     res.render("classesPage.hbs")
+// });
 
 app.get('/about',(req,res)=>{
     console.log("Loading AboutUS page")
@@ -35,8 +35,8 @@ app.get('/contact',(req,res)=>{
 });
 
 
-
-app.use("/get-classes",classRouter)
+//using the mock class router to pull information from a database
+app.use("/classes",classRouter)
 
 // app.get("/get-classes", (req,res)=> {
 //     res.render("classesPage.hbs",data = classRouter)

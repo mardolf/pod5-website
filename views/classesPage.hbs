@@ -2,14 +2,19 @@
 
 
     <h1>Book in a class now!</h1>
-    <br>
+    
 
 
     <div>
         <table>
+        <tr>
+            <th>Class</th>
+            <th>Date</th>
+            <th>Trainer</th>
+        </tr>
         {{#each data}}
-        <tr>{{this.type}} {{this.date}} {{this.trainerName}}</tr>
-        <br>
+        <tr><td>{{this.type}}</td> <td> {{this.date}}</td><td> {{this.trainerName}}</td></tr>
+        {{!-- <br> --}}
         {{/each}}
         </table>
     </div>
